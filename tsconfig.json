@@ -1,11 +1,16 @@
 {
         "compilerOptions": {
-                "target": "es2016",
+                "target": "es5",
+                "moduleResolution": "node",
+                "sourceMap": true,
                 "module": "commonjs",
                 "outDir": "dist",
+                "rootDir": "./src",
                 "esModuleInterop": true,
                 "forceConsistentCasingInFileNames": true,
                 "strict": true,
                 "skipLibCheck": true
-        }
+        },
+        /* compiles only the .ts files in the src foler*/
+        "include": ["./src/**/*"]
 }
